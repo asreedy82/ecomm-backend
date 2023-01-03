@@ -58,6 +58,10 @@ router.put('/:id', async (req, res) => {
       },
       }
     );
+    if (!updatedCategory) {
+      res.status(404).json({message: 'No category with that ID'});
+      return;
+    }
     res.json(updatedCategory);
   } catch (err) {
     res.status(500).json(err);
@@ -74,6 +78,10 @@ router.delete('/:id', async (req, res) => {
         },
       }
     );
+    if (!updatedCategory) {
+      res.status(404).json({message: 'No category with that ID'});
+      return;
+    }
     res.json(deletedCategory);
   } catch (err) {
     res.status(500).json(err);

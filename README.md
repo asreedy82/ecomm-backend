@@ -11,7 +11,7 @@ The Ecommerce Website Backend application manages inventory for an ecommerce com
 Application requirements: Insomnia as well as MySQL2, Sequelize, and dotenv packages
 To start, first create the schema and database using the SQL scripts in the `schema.sql` file in the `db` folder. Then seed the data by running `npm run seed` in the terminal. Then initiate the app by running `node server.js` in terminal to establish the server connection. Open Insomnia and enter the address for the API route that corresponds to the feature you want to use. For example, to review or change products, use `localhost:3001/api/products/`. For tags, `localhost:3001/api/tags/`. And for categories, `localhost:3001/api/categories/`. GET will return products/tags/categories. POST will create new. PUT will update existing. And DELETE will delete.
 
-  - Link to video demo of app [Screencast Link]()
+  - Link to video demo of app [Screencast Link](https://watch.screencastify.com/v/WrWWcLLZc2debGEevF94)
 
 ## Usage
 
